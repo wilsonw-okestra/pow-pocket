@@ -49,11 +49,11 @@ const Solutions: FC = () => {
         {card.map((data, id) => {
           return (
             <div
-              id={id}
+              id="id"
               className="bg-white gap-3 flex flex-col justify-center items-center w-72 h-80 px-1 rounded-2xl text-center shadow-xl"
             >
               <div className="w-20">
-                <Image src={data.image} layout="intrinsic" />
+                <Image src={data.image} alt="image" layout="intrinsic" />
               </div>
               <h3 className="text-lg font-semibold">{data.title}</h3>
               <p>{data.body}</p>
