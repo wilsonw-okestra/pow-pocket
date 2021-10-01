@@ -1,6 +1,5 @@
 import React, { FC, useState, useEffect } from "react";
 import { BsList } from "react-icons/bs";
-// import HideOnScroll from "./HideOnScroll";
 import { Link as LinkTo } from "react-scroll";
 import Link from "next/link";
 
