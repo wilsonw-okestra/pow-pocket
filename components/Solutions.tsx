@@ -46,12 +46,9 @@ const Solutions: FC = () => {
         id="card-container"
         className="lg:w-1/2 flex flex-col md:flex-row justify-center items-center gap-5 mb-20 md:my-10 mx-10"
       >
-        {card.map((data, id) => {
+        {card.map((data) => {
           return (
-            <div
-              id="id"
-              className="bg-white gap-3 flex flex-col justify-center items-center w-72 h-80 px-1 rounded-2xl text-center shadow-xl"
-            >
+            <div className="bg-white gap-3 flex flex-col justify-center items-center w-72 h-80 px-1 rounded-2xl text-center shadow-xl">
               <div className="w-20">
                 <Image src={data.image} alt="image" layout="intrinsic" />
               </div>

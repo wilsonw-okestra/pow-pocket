@@ -48,10 +48,10 @@ const Principles: FC = () => {
       {/* Bottom Section */}
       <div className="h-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mx-5 md:mx-16 py-10 lg:py-12">
         {/* grid item */}
-        {principles.map((data, id) => {
+        {principles.map((data) => {
           return (
             <div
-              key={id}
+              key={data.id}
               className="flex w-full h-full px-4 py-12 md:py-8 bg-white rounded-xl shadow-lg"
             >
               <div>

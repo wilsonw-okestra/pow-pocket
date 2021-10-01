@@ -9,7 +9,7 @@ import Solutions from "../components/Solutions";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Homepage />
       <Solutions />
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Principles />
       <Clients />
       <Footer />
-    </div>
+    </>
   );
 };
 

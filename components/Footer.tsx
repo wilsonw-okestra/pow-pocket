@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import { FaFacebookSquare, FaLinkedin } from "react-icons/Fa";
-import { AiTwotoneMail } from "react-icons/Ai";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { AiTwotoneMail } from "react-icons/ai";
 import Link from "next/link";
 
 const Footer: FC = () => {

@@ -13,7 +13,7 @@ const Navbar: FC = () => {
   ];
   // Hide Show
   const [isOpen, setIsOpen] = useState(false);
-  const [isOpenMobile, setIsOpenMobile] = useState(false);
+
   // Scroll Top Change Class
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
@@ -35,29 +35,29 @@ const Navbar: FC = () => {
         <div className="company-logo">
           <Link passHref href="/">
             <button>
-              <h1 className="flex ml-5 text-lg md:text-xl uppercase">
+              <a className="flex ml-5 text-lg md:text-xl uppercase">
                 Pow Pocket
-              </h1>
+              </a>
             </button>
           </Link>
         </div>
         {/* list items */}
         <div className="hidden md:flex">
           <ul className="flex">
-            {listItems.map((data, id) => {
+            {listItems.map((data) => {
               return (
-                <li key={id} className="mr-10">
+                <li key={data.id} className="mr-10">
                   <LinkTo
                     to={data.scrollTo}
                     spy={true}
                     smooth={true}
                     offset={-0}
                   >
-                    <button className="text-black text-sm md:text-base hover:text-gray-500 duration-200 ease-in-out">
-                      <Link href={data.href}>
+                    <Link passHref href={data.href}>
+                      <button className="text-black text-sm md:text-base hover:text-gray-500 duration-200 ease-in-out">
                         <a>{data.name}</a>
-                      </Link>
-                    </button>
+                      </button>
+                    </Link>
                   </LinkTo>
                 </li>
               );
@@ -69,7 +69,6 @@ const Navbar: FC = () => {
           className="text-2xl flex md:hidden"
           onClick={() => {
             setIsOpen(!isOpen);
-            setIsOpenMobile(!isOpen);
           }}
         >
           <BsList />
@@ -80,9 +79,9 @@ const Navbar: FC = () => {
         <nav>
           <div className="z-20 fixed flex md:hidden justify-end items-center w-1/2 right-0 h-screen mt-24 bg-white border-l-2 border-gray-50">
             <ul className="flex flex-col justify-center items-center w-full h-full ">
-              {listItems.map((data, id) => {
+              {listItems.map((data) => {
                 return (
-                  <li key={id} className="">
+                  <li key={data.id} className="">
                     <button className="text-black text-2xl relative bottom-20 md:text-base hover:text-gray-500 duration-200 ease-in-out py-5">
                       <a href={data.href}>{data.name}</a>
                     </button>

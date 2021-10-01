@@ -21,6 +21,25 @@ const Clients: FC = () => {
       link: "https://johortravelsafe.my/",
     },
   ];
+
+  const cards = logos.map((data) => {
+    return (
+      <div
+        key={data.id}
+        className="w-full lg:w-96 p-10 rounded shadow-xl flex flex-col justify-center items-center gap-3"
+      >
+        <div className="p-3 w-48 md:w-60 cursor-pointer">
+          <a href={data.link}>
+            <Image src={data.image} alt="image" layout="intrinsic" />
+          </a>
+        </div>
+        <div>
+          <h2 className="text-2xl pb-2">{data.title}</h2>
+          <p className="text-sm">{data.body}</p>
+        </div>
+      </div>
+    );
+  });
   return (
     <div
       id="clients"
@@ -38,26 +57,7 @@ const Clients: FC = () => {
       {/* Card Container */}
       <div className="h-full flex justify-between items-center">
         {/* Clients Card */}
-        <div className="flex flex-col md:flex-row gap-10 my-10">
-          {logos.map((data, id) => {
-            return (
-              <div
-                key={id}
-                className="w-full lg:w-96 p-10 rounded shadow-xl flex flex-col justify-center items-center gap-3"
-              >
-                <div className="p-3 w-48 md:w-60 cursor-pointer">
-                  <a href={data.link}>
-                    <Image src={data.image} alt="image" layout="intrinsic" />
-                  </a>
-                </div>
-                <div>
-                  <h2 className="text-2xl pb-2">{data.title}</h2>
-                  <p className="text-sm">{data.body}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <div className="flex flex-col md:flex-row gap-10 my-10">{cards}</div>
       </div>
     </div>
   );

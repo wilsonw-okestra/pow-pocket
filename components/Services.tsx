@@ -26,13 +26,13 @@ const Services: FC = () => {
           <p className="text-left">
             Lorem ipsum dolor sit met, consectetur adipiscing elit. Aenean
             sodales dictum viverra. Nam gravida dignissim eros. Vivamus congue
-            erat ante, volutpat dictum neque dignissim eget.
+            erat ante, volutpat dictum neue dignissim eget.
           </p>
           {/* services list */}
           <ul className="grid grid-cols-2 grid-rows-2 items-center gap-4 pt-5">
-            {Services.map((data, id) => {
+            {Services.map((data) => {
               return (
-                <div key={id} className="flex relative -left-3">
+                <div key={data.id} className="flex relative -left-3">
                   <BsDot className="text-4xl h-10" />
                   <li className="flex items-center w-full text-sm font-semibold">
                     {data.title}
