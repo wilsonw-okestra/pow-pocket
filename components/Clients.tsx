@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { FC } from "react";
 import Image from "next/image";
 import logo1 from "../images/jengu-logo.jpeg";
@@ -46,7 +47,7 @@ const Clients: FC = () => {
               >
                 <div className="p-3 w-48 md:w-60 cursor-pointer">
                   <a href={data.link}>
-                    <Image src={data.image} layout="intrinsic" />
+                    <Image src={data.image} alt="image" layout="intrinsic" />
                   </a>
                 </div>
                 <div>

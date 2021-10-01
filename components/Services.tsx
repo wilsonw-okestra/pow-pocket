@@ -14,7 +14,7 @@ const Services: FC = () => {
     <div className="h-full md:h-screen w-full flex flex-col lg:flex-row justify-center">
       {/* Image Section */}
       <div className="lg:w-1/2 flex justify-center items-center py-20">
-        <Image src={Logo} layout="intrinsic" />
+        <Image alt="image" src={Logo} layout="intrinsic" />
       </div>
       {/* Content Section */}
       <div className="lg:w-1/2 font-sans flex flex-col justify-center items-center pb-10 mx-8 md:mx-16">
@@ -24,7 +24,7 @@ const Services: FC = () => {
             <span className="font-thin ml-2">with leading technologies</span>
           </h2>
           <p className="text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            Lorem ipsum dolor sit met, consectetur adipiscing elit. Aenean
             sodales dictum viverra. Nam gravida dignissim eros. Vivamus congue
             erat ante, volutpat dictum neque dignissim eget.
           </p>

@@ -10,7 +10,7 @@ const Footer: FC = () => {
         {/* First Container */}
         <div className="flex flex-col justify-center py-10">
           <button>
-            <Link href="/">
+            <Link passHref href="/">
               <h1 className="text-2xl sm:text-3xl uppercase pb-1">
                 Pow Pocket
               </h1>

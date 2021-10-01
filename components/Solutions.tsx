@@ -36,8 +36,8 @@ const Solutions: FC = () => {
           </h3>
           <p className="text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            sodales dictum viverra. Nam gravida dignissim eros. Vivamus congue
-            erat ante, volutpat dictum neque dignissim eget.
+            sodales dictm viverra. Nam gravida dignissim eros. Vivamus congue
+            erat ante, volutpat dactuneqe dignissim eget.
           </p>
         </div>
       </div>

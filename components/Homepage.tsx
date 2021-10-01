@@ -25,7 +25,7 @@ const Homepage: FC = () => {
       </div>
       {/* Image */}
       <div className="h-full md:w-1/2 flex justify-center items-center py-10">
-        <Image src={Logo} layout="intrinsic" />
+        <Image src={Logo} alt="image" layout="intrinsic" />
       </div>
     </div>
   );
