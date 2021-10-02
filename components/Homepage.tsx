@@ -6,7 +6,7 @@ const Homepage: FC = () => {
   return (
     <div
       id="home"
-      className="h-screen w-full flex flex-col-reverse md:flex-row justify-center items-center"
+      className="h-screen w-full flex flex-col-reverse md:flex-row justify-center items-center pt-20"
     >
       {/* Text Content */}
       <div className="h-full md:w-1/2 font-sans flex flex-col justify-center items-center px-10 py-10">
