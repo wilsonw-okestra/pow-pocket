@@ -39,7 +39,7 @@ const Footer: FC = () => {
         </div>
       </div>
       {/* bottom container */}
-      <div className="flex justify-center items-center border-t-2 py-5">
+      <div className="flex justify-center items-center border-t-2 bg-gray-50 py-5">
         <h2>© Copyright Pow Pocket 2021</h2>
       </div>
     </div>
