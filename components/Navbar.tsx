@@ -76,7 +76,7 @@ const Navbar: FC = () => {
       {/* mobile extension */}
       {isOpen && (
         <nav>
-          <div className="z-20 fixed flex md:hidden justify-end items-center w-1/2 right-0 h-screen mt-20 md:mt-24 bg-white border-l-2 border-gray-50">
+          <div className="z-20 fixed flex md:hidden justify-end items-center w-1/2 right-0 h-screen mt-20 md:mt-24 bg-white bg-opacity-90 md:bg-opacity-100 shadow-2xl border-l-2 border-gray-50">
             <ul className="flex flex-col justify-center items-center w-full h-full ">
               {listItems.map((data) => {
                 return (
