@@ -20,7 +20,7 @@ const Contact: FC = () => {
           </div>
           {/* form */}
           <form
-            className="text-xs max-w-7 mx-10 my-10 md:mx-1/2 lg:mx-0"
+            className="text-xs max-w-7 mx-0 md:mx-10 my-10 md:mx-1/2 lg:mx-0"
             action=""
             method="POST"
           >
@@ -35,7 +35,7 @@ const Contact: FC = () => {
                   E-mail
                 </label>
                 <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-44 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-28 md:px-44 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="email"
                   type="email"
                   name="email"
@@ -52,7 +52,7 @@ const Contact: FC = () => {
                   Message
                 </label>
                 <textarea
-                  className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-44 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                  className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-28 md:px-44 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                   id="message"
                   name="message"
                 ></textarea>
