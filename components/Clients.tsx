@@ -43,7 +43,7 @@ const Clients: FC = () => {
   return (
     <div
       id="clients"
-      className="h-full lg:h-screen flex flex-col justify-between items-center mx-5 md:mx-10 py-10"
+      className="h-full lg:h-screen flex flex-col justify-between items-center mx-5 md:mx-10 xy-10"
     >
       {/* Text Content */}
       <div className="font-sans flex flex-col justify-center items-start py-10">
