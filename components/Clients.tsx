@@ -50,7 +50,7 @@ const Clients: FC = () => {
         <h2 className="text-4xl sm:text-5xl mb-5">Our Clients</h2>
         <p className="text-lg sm:text-xl text-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus
-          mi id elit gravida, quis tincidunt purus fringilla. Aenean convallis a
+          mi id elit gravida, uis tincidunt purus fringilla. Aenean convallis a
           neque non pellentesque.
         </p>
       </div>
