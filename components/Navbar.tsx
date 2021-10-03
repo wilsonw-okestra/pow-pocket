@@ -26,8 +26,8 @@ const Navbar: FC = () => {
       <nav
         className={
           scroll
-            ? "down z-20 fixed flex justify-between items-center w-screen h-20 md:h-24 bg-white bg-opacity-90 md:bg-opacity-100 shadow-lg px-10"
-            : "top  z-20 fixed flex justify-between items-center w-screen h-20 md:h-24 bg-white bg-opacity-90 md:bg-opacity-100 shadow-lg px-10"
+            ? "down z-20 fixed flex justify-between items-center w-screen h-20 md:h-24 bg-white bg-opacity-90 md:bg-opacity-90 shadow-lg px-10"
+            : "top  z-20 fixed flex justify-between items-center w-screen h-20 md:h-24 bg-white bg-opacity-90 md:bg-opacity-90 shadow-lg px-10"
         }
       >
         {/* logo */}
