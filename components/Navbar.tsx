@@ -7,10 +7,10 @@ import Logo from "../images/Logo.svg";
 
 const Navbar: FC = () => {
   const listItems = [
-    { id: 1, name: "Home", href: "/", scrollTo: "home" },
-    { id: 2, name: "About", href: "", scrollTo: "home" },
-    { id: 3, name: "Products", href: "", scrollTo: "clients" },
-    { id: 4, name: "Contact", href: "/contact", scrollTo: "" },
+    { id: 1, name: "Home", href: "/" },
+    { id: 2, name: "About", href: "/about" },
+    { id: 3, name: "Products", href: "/products" },
+    { id: 4, name: "Contact", href: "/contact" },
   ];
   // Hide Show
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +37,7 @@ const Navbar: FC = () => {
           <Link passHref href="/">
             <button>
               <a className="flex text-lg md:text-xl uppercase">
-                <Image src={Logo} width="150" />
+                <Image src={Logo} alt="logo" width="150" />
               </a>
             </button>
           </Link>

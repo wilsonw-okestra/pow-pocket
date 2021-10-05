@@ -5,6 +5,8 @@ import logo1 from "../images/jengu-logo.jpeg";
 import logo2 from "../images/travel-safe-logo.jpeg";
 import logo3 from "../images/immuplan-logo.svg";
 import logo4 from "../images/seek-logo.svg";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const Clients: FC = () => {
   const logos = [
@@ -32,7 +34,7 @@ const Clients: FC = () => {
     {
       id: 4,
       title: "Seek Vaxin",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam explicabo facere fugit ullam modi pariatur temporibus ipsam quia nostrum.",
+      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et animi cupiditate neque, dolor, eaque nobis quibusdam error hic delectus molestiae minus ipsa ad veniam iure, harum velit amet alias in esse quas saepe voluptates commodi? Tempore nesciunt aut repellat porro architecto iste necessitatibus saepe voluptatibus nisi rem officiis esse hic aspernatur nulla ratione maxime beatae delectus in praesentium incidunt ullam natus atque, ipsam alias. Praesentium accusantium ducimus perspiciatis eligendi error soluta dicta dolorum eveniet debitis, necessitatibus quidem molestiae ullam nemo, qui voluptatem aspernatur deleniti.",
       image: logo4,
       link: "https://seek.vaxin.my/",
     },
@@ -42,16 +44,16 @@ const Clients: FC = () => {
     return (
       <div
         key={data.id}
-        className="w-full lg:w-80 h-full p-10 rounded shadow-xl flex flex-col justify-center items-center gap-3"
+        className="w-full h-full p-10 rounded shadow-xl flex flex-col justify-center items-center gap-3"
       >
         {/* Image */}
-        <div className="w-48 md:w-60 h-1/3 cursor-pointer flex justify-center items-center">
+        <div className="w-48 md:w-60 h-44 cursor-pointer flex justify-center items-center">
           <a href={data.link}>
             <Image src={data.image} alt="image" layout="intrinsic" />
           </a>
         </div>
         {/* Text */}
-        <div className="h-2/3 overflow-hidden">
+        <div className="h-full">
           <h2 className="text-2xl pb-2">{data.title}</h2>
           <p className="text-sm">{data.body}</p>
         </div>
@@ -59,24 +61,30 @@ const Clients: FC = () => {
     );
   });
   return (
-    <div
-      id="clients"
-      className="h-full lg:h-screen w-screen flex flex-col justify-between items-center mx-5 md:px-10 my-10"
-    >
-      {/* Text Content */}
-      <div className="font-sans flex flex-col justify-center items-start py-10">
-        <h2 className="text-4xl sm:text-5xl mb-5">Our Clients</h2>
-        <p className="text-lg sm:text-xl text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus
-          mi id elit gravida, uis tincidunt purus fringilla. Aenean convallis a
-          neque non pellentesque.
-        </p>
+    <div>
+      <Navbar />
+      <div
+        id="clients"
+        className="h-full w-screen flex flex-col justify-between items-center px-10 py-10 pt-24"
+      >
+        {/* Text Content */}
+        <div className="font-sans flex flex-col justify-center items-start my-10">
+          <h2 className="text-4xl sm:text-5xl mb-5">Our Clients</h2>
+          <p className="text-lg sm:text-xl text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            finibus mi id elit gravida, uis tincidunt purus fringilla. Aenean
+            convallis a neque non pellentesque.
+          </p>
+        </div>
+        {/* Card Container */}
+        <div className="h-full flex justify-between items-center">
+          {/* Clients Card */}
+          <div className="grid grid-flow-col grid-rows-4 lg:grid-rows-2 my-10 mx-10 sm:mx-24 gap-10">
+            {cards}
+          </div>
+        </div>
       </div>
-      {/* Card Container */}
-      <div className="h-full flex justify-between items-center">
-        {/* Clients Card */}
-        <div className="grid grid-flow-col my-10 gap-10">{cards}</div>
-      </div>
+      <Footer />
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Footer: FC = () => {
           <button>
             <Link passHref href="/">
               <a>
-                <Image src={Logo} width="180" />
+                <Image src={Logo} alt="logo" width="180" />
               </a>
             </Link>
           </button>
