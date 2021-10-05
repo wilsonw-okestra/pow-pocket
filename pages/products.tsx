@@ -79,7 +79,7 @@ const Clients: FC = () => {
         {/* Card Container */}
         <div className="h-full flex justify-between items-center">
           {/* Clients Card */}
-          <div className="grid grid-flow-col grid-rows-4 lg:grid-rows-2 my-10 mx-10 sm:mx-24 gap-10">
+          <div className="grid grid-flow-col grid-rows-4 lg:grid-rows-2 my-10 mx-0 sm:mx-24 gap-10">
             {cards}
           </div>
         </div>
