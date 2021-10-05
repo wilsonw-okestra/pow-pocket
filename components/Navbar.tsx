@@ -48,18 +48,11 @@ const Navbar: FC = () => {
             {listItems.map((data) => {
               return (
                 <li key={data.id} className="mr-10">
-                  <LinkTo
-                    to={data.scrollTo}
-                    spy={true}
-                    smooth={true}
-                    offset={-0}
-                  >
-                    <Link passHref href={data.href}>
-                      <button className="text-black text-sm md:text-base hover:text-gray-500 duration-200 ease-in-out">
-                        <a>{data.name}</a>
-                      </button>
-                    </Link>
-                  </LinkTo>
+                  <Link passHref href={data.href}>
+                    <button className="text-black text-sm md:text-base hover:text-gray-500 duration-200 ease-in-out">
+                      <a>{data.name}</a>
+                    </button>
+                  </Link>
                 </li>
               );
             })}
