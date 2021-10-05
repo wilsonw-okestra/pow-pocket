@@ -24,7 +24,7 @@ const Solutions: FC = () => {
   return (
     <div
       id="solutions"
-      className="h-full md:h-screen w-full flex flex-col lg:flex-row justify-center bg-gray-50"
+      className="h-full md:h-screen w-full flex flex-col lg:flex-row justify-center bg-white border-b-2"
     >
       {/* Text Content */}
       <div className="lg:w-1/2 font-sans flex flex-col justify-center items-center my-20 md:my-10 mx-10">

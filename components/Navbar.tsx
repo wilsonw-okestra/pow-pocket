@@ -2,6 +2,8 @@ import React, { FC, useState, useEffect } from "react";
 import { BsList } from "react-icons/bs";
 import { Link as LinkTo } from "react-scroll";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "../images/Logo.svg";
 
 const Navbar: FC = () => {
   const listItems = [
@@ -26,16 +28,16 @@ const Navbar: FC = () => {
       <nav
         className={
           scroll
-            ? "down z-20 fixed flex justify-between items-center w-screen h-20 md:h-24 bg-white bg-opacity-90 md:bg-opacity-90 shadow-lg px-10"
-            : "top  z-20 fixed flex justify-between items-center w-screen h-20 md:h-24 bg-white bg-opacity-90 md:bg-opacity-90 shadow-lg px-10"
+            ? "down z-20 fixed flex justify-between items-center w-screen h-20 md:h-22 bg-white bg-opacity-90 md:bg-opacity-90 shadow-lg px-10"
+            : "top  z-20 fixed flex justify-between items-center w-screen h-20 md:h-22 bg-white md:bg-transparent bg-opacity-90 md:bg-opacity-90 px-10"
         }
       >
         {/* logo */}
         <div className="company-logo">
           <Link passHref href="/">
             <button>
-              <a className="flex ml-5 text-lg md:text-xl uppercase">
-                Pow Pocket
+              <a className="flex text-lg md:text-xl uppercase">
+                <Image src={Logo} width="150" />
               </a>
             </button>
           </Link>

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Image from "next/image";
-import Logo from "../images/team-2-square.jpg";
+import Logo from "../images/mobile-app.png";
 import { BsDot } from "react-icons/bs";
 
 const Services: FC = () => {
@@ -11,9 +11,9 @@ const Services: FC = () => {
     { id: 4, title: "Microservices Architecture" },
   ];
   return (
-    <div className="h-full md:h-screen w-full flex flex-col lg:flex-row justify-center">
+    <div className="h-full md:h-screen w-full flex flex-col lg:flex-row justify-center my-20 lg:my-0">
       {/* Image Section */}
-      <div className="lg:w-1/2 flex justify-center items-center py-20">
+      <div className="h-full w-full lg:w-1/2 flex justify-center items-center">
         <Image alt="image" src={Logo} layout="intrinsic" />
       </div>
       {/* Content Section */}

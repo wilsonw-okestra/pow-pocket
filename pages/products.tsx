@@ -38,10 +38,30 @@ const Clients: FC = () => {
     },
   ];
 
+  const cards = logos.map((data) => {
+    return (
+      <div
+        key={data.id}
+        className="w-full lg:w-80 h-full p-10 rounded shadow-xl flex flex-col justify-center items-center gap-3"
+      >
+        {/* Image */}
+        <div className="w-48 md:w-60 h-1/3 cursor-pointer flex justify-center items-center">
+          <a href={data.link}>
+            <Image src={data.image} alt="image" layout="intrinsic" />
+          </a>
+        </div>
+        {/* Text */}
+        <div className="h-2/3 overflow-hidden">
+          <h2 className="text-2xl pb-2">{data.title}</h2>
+          <p className="text-sm">{data.body}</p>
+        </div>
+      </div>
+    );
+  });
   return (
     <div
       id="clients"
-      className="h-full lg:h-screen w-screen flex flex-col justify-between items-center px-5 md:px-10 my-10"
+      className="h-full lg:h-screen w-screen flex flex-col justify-between items-center mx-5 md:px-10 my-10"
     >
       {/* Text Content */}
       <div className="font-sans flex flex-col justify-center items-start py-10">
@@ -52,25 +72,10 @@ const Clients: FC = () => {
           neque non pellentesque.
         </p>
       </div>
-      {/* Clients  */}
-      <div className="h-full flex justify-between items-center py-10">
-        <div className="grid grid-flow-col grid-rows-4 sm:grid-rows-2 xl:grid-rows-1 gap-10 xl:gap-5">
-          {logos.map((data) => {
-            return (
-              <div
-                key={data.id}
-                className="w-full h-full p-10 rounded shadow-xl flex flex-col justify-center items-center gap-3"
-              >
-                {/* Image */}
-                <div className="w-48 md:w-60 h-1/3 cursor-pointer flex justify-center items-center rounded-xl">
-                  <a href={data.link}>
-                    <Image src={data.image} alt="image" layout="intrinsic" />
-                  </a>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+      {/* Card Container */}
+      <div className="h-full flex justify-between items-center">
+        {/* Clients Card */}
+        <div className="grid grid-flow-col my-10 gap-10">{cards}</div>
       </div>
     </div>
   );

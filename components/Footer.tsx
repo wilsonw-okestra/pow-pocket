@@ -2,21 +2,23 @@ import React, { FC } from "react";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
 import Link from "next/link";
+import Logo from "../images/Logo.svg";
+import Image from "next/image";
 
 const Footer: FC = () => {
   return (
-    <div className="h-full md:h-60 text-center md:text-left bg-gray-50 md:px-20">
+    <div className="h-full text-center md:text-left bg-blue-50 md:px-20 ">
       <div className="h-full md:h-52 flex flex-col md:flex-row justify-between items-center">
         {/* First Container */}
         <div className="flex flex-col justify-center py-10">
           <button>
             <Link passHref href="/">
-              <h1 className="text-2xl sm:text-3xl uppercase pb-1">
-                Pow Pocket
-              </h1>
+              <a>
+                <Image src={Logo} width="180" />
+              </a>
             </Link>
           </button>
-          <div className="icons flex justify-center gap-4 text-3xl sm:text-4xl">
+          <div className="icons flex justify-center gap-4  text-3xl sm:text-4xl">
             <a href="#">
               <FaLinkedin />
             </a>
@@ -39,7 +41,7 @@ const Footer: FC = () => {
         </div>
       </div>
       {/* bottom container */}
-      <div className="flex justify-center items-center border-t-2 bg-gray-50 py-5">
+      <div className="flex justify-center items-center border-t-2 py-5">
         <h2>© Copyright Pow Pocket 2021</h2>
       </div>
     </div>
