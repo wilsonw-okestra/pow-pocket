@@ -27,16 +27,23 @@ const Clients: FC = () => {
     {
       id: 3,
       title: "ImmuPlan",
-      body: "The Johor Vaksin Immunisation Programme (JVIP) is one of the initiatives by Johor State Government to support and complement the National COVID-19 Immunisation Programme. Launched on 12th July 2021, the programme's objective is to curb the spread of Covid-19 within the community specifically amongst the industrial workers. The programme offers commercial vaccination services at Kumpulan Perubatan Johor (KPJ) Hospitals and other appointed hospitals/clinics across the state for both local and foreign workers. The programme aims to vaccinate up to 1 million industrial workers.",
+      body: "ImmuPlan encompasses both the Johor Economic Frontliners Programme and the Johor Vaksin Immunisation Programme (JVIP) initiatives by the Johor State Government to support and complement the National COVID-19 Immunisation Programme. Launched on 29th April 2021, the programme's objective is to acceleraete the vaccination efforts in the state of Johor. Immuplan was developed as a whitelabel initiative for the Johor State Goverment.",
       image: logo3,
       link: "https://immuplan.my/",
     },
     {
       id: 4,
-      title: "Seek Vaxin",
-      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et animi cupiditate neque, dolor, eaque nobis quibusdam error hic delectus molestiae minus ipsa ad veniam iure, harum velit amet alias in esse quas saepe voluptates commodi? Tempore nesciunt aut repellat porro architecto iste necessitatibus saepe voluptatibus nisi rem officiis esse hic aspernatur nulla ratione maxime beatae delectus in praesentium incidunt ullam natus atque, ipsam alias. Praesentium accusantium ducimus perspiciatis eligendi error soluta dicta dolorum eveniet debitis, necessitatibus quidem molestiae ullam nemo, qui voluptatem aspernatur deleniti.",
+      title: "Immunise",
+      body: "Immunise is a national end-to-end vaccine delivery platform, encompassing features such as vaccine booking, appointment scheduling, order management,  physical vaccine delivery & cold chain, refunds, reconciliation and invoicing, and dashboard analytics.",
       image: logo4,
-      link: "https://seek.vaxin.my/",
+      link: "https://immunise.my/",
+    },
+    {
+      id: 5,
+      title: "QRLab",
+      body: "QR Lab a blockchain digital verification system that allows for immutability and provenance of Covid-19 test results, eliminating the potential for forgery and ensuring complete transparency of test results.",
+      image: logo5,
+      link: "https://qrlab.my/",
     },
   ];
 
