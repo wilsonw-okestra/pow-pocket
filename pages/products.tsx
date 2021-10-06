@@ -6,6 +6,7 @@ import logo2 from "../images/travel-safe-logo.jpeg";
 import logo3 from "../images/immuplan-logo.svg";
 import logo4 from "../images/seek-logo.svg";
 import logo5 from "../images/qrlab-logo.svg";
+import logo6 from "../images/immunise-logo.png";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -35,7 +36,7 @@ const Clients: FC = () => {
     {
       id: 4,
       title: "Seek Vaxin",
-      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et animi cupiditate neque, dolor, eaque nobis quibusdam error hic delectus molestiae minus ipsa ad veniam iure, harum velit amet alias in esse quas saepe voluptates commodi? Tempore nesciunt aut repellat porro architecto iste necessitatibus saepe voluptatibus nisi rem officiis esse hic aspernatur nulla ratione maxime beatae delectus in praesentium incidunt ullam natus atque, ipsam alias. Praesentium accusantium ducimus perspiciatis eligendi error soluta dicta dolorum eveniet debitis, necessitatibus quidem molestiae ullam nemo, qui voluptatem aspernatur deleniti.",
+      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et animi cupiditate neque, dolor, eaque nobis quibusdam error hic delectus molestiae minus ipsa ad veniam iure, harum velit amet alias in esse quas saepe voluptates commodi? Tempore nesciunt aut repellat porro architecto iste necessitatibus saepe voluptatibus nisi rem officiis esse hic aspernatur nulla ratione maxime beatae delectus in praesentium incidunt ullam natus atque.",
       image: logo4,
       link: "https://seek.vaxin.my/",
     },
@@ -45,6 +46,13 @@ const Clients: FC = () => {
       body: "QR Lab a blockchain digital verification system that allows for immutability and provenance of Covid-19 test results, eliminating the potential for forgery and ensuring complete transparency of test results.",
       image: logo5,
       link: "https://qrlab.my/",
+    },
+    {
+      id: 6,
+      title: "Immunise",
+      body: "Immunise is a national end-to-end vaccine delivery platform, encompassing features such as vaccine booking, appointment scheduling, order management,  physical vaccine delivery & cold chain, refunds, reconciliation and invoicing, and dashboard analytics.",
+      image: logo6,
+      link: "https://immunise.my/",
     },
   ];
 
@@ -83,7 +91,7 @@ const Clients: FC = () => {
         {/* Card Container */}
         <div className="h-full flex justify-between items-center">
           {/* Clients Card */}
-          <div className="grid grid-flow-col grid-rows-5 lg:grid-rows-2 my-10 mx-0 sm:mx-24 gap-10">
+          <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-10 mx-0 sm:mx-24 gap-10">
             {cards}
           </div>
         </div>

@@ -6,6 +6,7 @@ import logo2 from "../images/travel-safe-logo.jpeg";
 import logo3 from "../images/immuplan-logo.svg";
 import logo4 from "../images/seek-logo.svg";
 import logo5 from "../images/qrlab-logo.svg";
+import logo6 from "../images/immunise-logo.png";
 
 const Clients: FC = () => {
   const logos = [
@@ -44,6 +45,13 @@ const Clients: FC = () => {
       image: logo5,
       link: "https://qrlab.my/",
     },
+    {
+      id: 6,
+      title: "Immunise",
+      body: "Immunise is a national end-to-end vaccine delivery platform, encompassing features such as vaccine booking, appointment scheduling, order management,  physical vaccine delivery & cold chain, refunds, reconciliation and invoicing, and dashboard analytics.",
+      image: logo6,
+      link: "https://immunise.my/",
+    },
   ];
 
   return (
@@ -62,7 +70,7 @@ const Clients: FC = () => {
       </div>
       {/* Clients  */}
       <div className="h-full flex justify-between items-center py-10">
-        <div className="grid grid-flow-col grid-rows-5 sm:grid-rows-3 xl:grid-rows-2 gap-10 xl:gap-5">
+        <div className="grid grid-flow-col grid-rows-6 sm:grid-rows-3 xl:grid-rows-2 gap-10 xl:gap-5">
           {logos.map((data) => {
             return (
               <div

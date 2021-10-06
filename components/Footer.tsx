@@ -33,10 +33,11 @@ const Footer: FC = () => {
         {/* Second Container */}
         <div className="pb-10 md:pb-0">
           <h1 className="font-semibold">Malaysia Office</h1>
-          <h2 className="">49 Uniqe Square D, NY 10003</h2>
-          <h1 className="font-semibold">Singapore Office</h1>
-          <h2 className="">41 Parkes Road, Maude, NSW 2711</h2>
-          <h3 className="text-lg font-semibold">enquiries@powpocket.me</h3>
+          <h2 className="">35-8, Tower A, UOA Bangsar</h2>
+          <h2 className="">UOA Bangsar</h2>
+          <h2 className="">Jalan Bangsar, Bangsar</h2>
+          <h2 className="pb-2">59100 Kuala Lumpur, Malaysia</h2>
+          <h3 className="text-lg font-semibold">enquiries@powpocket.my</h3>
           <h3 className="text-lg font-semibold">+1 (234) 567-9801</h3>
         </div>
       </div>
