@@ -75,14 +75,15 @@ const Contact: FC = () => {
         {/* Right Container */}
         <div className="h-full md:w-1/2 flex flex-col justify-center items-center py-10">
           <div className="pb-10 md:pb-0">
-            <h1 className="text-xl font-semibold pb-2">Malaysia Office</h1>
-            <h2 className="text-lg pb-3">49 Uniqe Square D, NY 10003</h2>
-            <h1 className="text-xl font-semibold pb-2">Singapore Office</h1>
-            <h2 className="text-lg pb-3">41 Parkes Road, Maude, NSW 2711</h2>
+            <h1 className="text-xl font-semibold pb-2"Pow Pocket Sdn. Bhd.</h1>
+            <h2 className="text-lg pb-3">35-8, Tower A, UOA Bangsar</h2>
+            <h2 className="text-xl pb-3">UOA Bangsar</h2>
+            <h2 className="text-lg pb-3">Jalan Bangsar, Bangsar</h2>
+            <h2 className="text-lg pb-3">59100 Kuala Lumpur, Malaysia</h2>
             <h3 className="text-xl font-semibold pb-3">
-              enquiries@powpocket.me
+              enquiries@powpocket.my
             </h3>
-            <h3 className="text-xl font-semibold pb-3">+1 (234) 567-9801</h3>
+            <h3 className="text-xl font-semibold pb-3"></h3>
           </div>
           <div className="icons flex justify-center gap-10 text-4xl pt-20">
             <a href="#">
