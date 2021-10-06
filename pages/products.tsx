@@ -4,7 +4,8 @@ import Image from "next/image";
 import logo1 from "../images/jengu-logo.jpeg";
 import logo2 from "../images/travel-safe-logo.jpeg";
 import logo3 from "../images/immuplan-logo.svg";
-import logo4 from "../images/seek-logo.svg";
+import logo4 from "../images/immunise-logo.svg";
+import logo5 from "../images/qrlab-logo.svg"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
