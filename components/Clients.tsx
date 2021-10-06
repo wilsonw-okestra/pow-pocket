@@ -5,6 +5,7 @@ import logo1 from "../images/jengu-logo.jpeg";
 import logo2 from "../images/travel-safe-logo.jpeg";
 import logo3 from "../images/immuplan-logo.svg";
 import logo4 from "../images/seek-logo.svg";
+import logo5 from "../images/qrlab-logo.svg";
 
 const Clients: FC = () => {
   const logos = [
@@ -36,12 +37,19 @@ const Clients: FC = () => {
       image: logo4,
       link: "https://seek.vaxin.my/",
     },
+    {
+      id: 5,
+      title: "QRLab",
+      body: "QR Lab a blockchain digital verification system that allows for immutability and provenance of Covid-19 test results, eliminating the potential for forgery and ensuring complete transparency of test results.",
+      image: logo5,
+      link: "https://qrlab.my/",
+    },
   ];
 
   return (
     <div
       id="clients"
-      className="h-full lg:h-screen w-screen flex flex-col justify-between items-center px-5 md:px-10 my-10"
+      className="h-full xl:h-screen w-screen flex flex-col justify-between items-center px-5 md:px-10 my-10"
     >
       {/* Text Content */}
       <div className="font-sans flex flex-col justify-center items-start py-10">
@@ -54,7 +62,7 @@ const Clients: FC = () => {
       </div>
       {/* Clients  */}
       <div className="h-full flex justify-between items-center py-10">
-        <div className="grid grid-flow-col grid-rows-4 sm:grid-rows-2 xl:grid-rows-1 gap-10 xl:gap-5">
+        <div className="grid grid-flow-col grid-rows-5 sm:grid-rows-3 xl:grid-rows-2 gap-10 xl:gap-5">
           {logos.map((data) => {
             return (
               <div

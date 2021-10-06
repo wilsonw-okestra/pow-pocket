@@ -5,11 +5,12 @@ import logo1 from "../images/jengu-logo.jpeg";
 import logo2 from "../images/travel-safe-logo.jpeg";
 import logo3 from "../images/immuplan-logo.svg";
 import logo4 from "../images/seek-logo.svg";
+import logo5 from "../images/qrlab-logo.svg";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Clients: FC = () => {
-  const logos = [
+  const clientsList = [
     {
       id: 1,
       title: "Jengu",
@@ -27,7 +28,7 @@ const Clients: FC = () => {
     {
       id: 3,
       title: "ImmuPlan",
-      body: "The Johor Vaksin Immunisation Programme (JVIP) is one of the initiatives by Johor State Government to support and complement the National COVID-19 Immunisation Programme. Launched on 12th July 2021, the programme's objective is to curb the spread of Covid-19 within the community specifically amongst the industrial workers. The programme offers commercial vaccination services at Kumpulan Perubatan Johor (KPJ) Hospitals and other appointed hospitals/clinics across the state for both local and foreign workers. The programme aims to vaccinate up to 1 million industrial workers.",
+      body: "ImmuPlan encompasses both the Johor Economic Frontliners Programme and the Johor Vaksin Immunisation Programme (JVIP) initiatives by the Johor State Government to support and complement the National COVID-19 Immunisation Programme. Launched on 29th April 2021, the programme's objective is to acceleraete the vaccination efforts in the state of Johor. Immuplan was developed as a whitelabel initiative for the Johor State Goverment.",
       image: logo3,
       link: "https://immuplan.my/",
     },
@@ -38,9 +39,16 @@ const Clients: FC = () => {
       image: logo4,
       link: "https://seek.vaxin.my/",
     },
+    {
+      id: 5,
+      title: "QRLab",
+      body: "QR Lab a blockchain digital verification system that allows for immutability and provenance of Covid-19 test results, eliminating the potential for forgery and ensuring complete transparency of test results.",
+      image: logo5,
+      link: "https://qrlab.my/",
+    },
   ];
 
-  const cards = logos.map((data) => {
+  const cards = clientsList.map((data) => {
     return (
       <div
         key={data.id}
@@ -70,13 +78,12 @@ const Clients: FC = () => {
         {/* Text Content */}
         <div className="font-sans flex flex-col justify-center items-start my-10">
           <h2 className="text-4xl sm:text-5xl mb-5">Our Products</h2>
-          <p className="text-lg sm:text-xl text-left">
-          </p>
+          <p className="text-lg sm:text-xl text-left"></p>
         </div>
         {/* Card Container */}
         <div className="h-full flex justify-between items-center">
           {/* Clients Card */}
-          <div className="grid grid-flow-col grid-rows-4 lg:grid-rows-2 my-10 mx-0 sm:mx-24 gap-10">
+          <div className="grid grid-flow-col grid-rows-5 lg:grid-rows-2 my-10 mx-0 sm:mx-24 gap-10">
             {cards}
           </div>
         </div>
