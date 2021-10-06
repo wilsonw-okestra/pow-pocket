@@ -69,11 +69,8 @@ const Clients: FC = () => {
       >
         {/* Text Content */}
         <div className="font-sans flex flex-col justify-center items-start my-10">
-          <h2 className="text-4xl sm:text-5xl mb-5">Our Clients</h2>
+          <h2 className="text-4xl sm:text-5xl mb-5">Our Products</h2>
           <p className="text-lg sm:text-xl text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            finibus mi id elit gravida, uis tincidunt purus fringilla. Aenean
-            convallis a neque non pellentesque.
           </p>
         </div>
         {/* Card Container */}
