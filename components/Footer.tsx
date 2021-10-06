@@ -38,7 +38,6 @@ const Footer: FC = () => {
           <h2 className="">Jalan Bangsar, Bangsar</h2>
           <h2 className="pb-2">59100 Kuala Lumpur, Malaysia</h2>
           <h3 className="text-lg font-semibold">enquiries@powpocket.my</h3>
-          <h3 className="text-lg font-semibold">+1 (234) 567-9801</h3>
         </div>
       </div>
       {/* bottom container */}
