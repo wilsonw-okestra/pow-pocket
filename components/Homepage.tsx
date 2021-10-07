@@ -22,7 +22,7 @@ const Homepage: FC = () => {
           <p className="text-left">
             Since its inception Pow Pocket has continued to push the boundaries
             of innovation and high-performance. The company has developed
-            capabilities in decision science, process automation, trace and
+            capabilities in decision science, process automation, track and
             trace, and performance measurement gained from the tremendous
             collective experience of the team.
           </p>
