@@ -17,6 +17,7 @@
     "react-scroll": "^1.8.4"
   },
   "devDependencies": {
+    "@types/node": "^16.10.3",
     "@types/react": "17.0.25",
     "@types/react-scroll": "^1.8.3",
     "autoprefixer": "^10.3.6",
