@@ -9,7 +9,7 @@ const Footer: FC = () => {
     <div className="h-full font-sand text-center md:text-left bg-blue-50 md:px-20 relative">
       {/* background */}
       <div className="z-0 opacity-10 w-full overflow-hidden">
-        <Image src={bg} alt="" layout="fill" />
+        <Image src={bg} alt="bg" layout="fill" />
       </div>
       <div className="h-full md:h-52 flex flex-col md:flex-row justify-between items-center">
         {/* First Container */}
