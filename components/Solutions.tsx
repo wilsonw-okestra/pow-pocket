@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import Image from "next/image";
 
 // Logos
-import logo1 from "../images/jengu-logo.jpeg";
+import logo1 from "../images/jengu-logo.svg";
 import logo2 from "../images/travel-safe-logo.jpeg";
 import logo3 from "../images/immuplan-logo.svg";
 import logo4 from "../images/immunise-logo.png";
@@ -56,7 +56,7 @@ const Solutions: FC = () => {
       >
         {/* Image */}
         <div className="w-48 md:w-60 h-44 cursor-pointer flex justify-center items-center">
-          <a href={data.link}>
+          <a href={data.link} target="_blank" rel="noreferrer">
             <Image src={data.image} alt="image" layout="intrinsic" />
           </a>
         </div>
@@ -80,10 +80,10 @@ const Solutions: FC = () => {
   return (
     <div
       id="solutions"
-      className="h-full xl:h-scree w-full flex flex-col justify-center bg-white border-b-2"
+      className="h-full w-full font-sand flex flex-col justify-center bg-white border-b-2 relative"
     >
       {/* Text Content */}
-      <div className="font-sans flex flex-col justify-center items-center my-20 md:my-10 mx-12 md:mx-24">
+      <div className="font-sand flex flex-col justify-center items-center my-20 md:my-10 mx-12 md:mx-24">
         <div>
           <h2 className="text-4xl sm:text-5xl mb-4">Our Solutions</h2>
           <h3 className="text-base sm:text-lg font-semibold mb-4">
@@ -100,7 +100,7 @@ const Solutions: FC = () => {
       {/* cards */}
       <div
         id="card-container"
-        className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-10 mx-10 sm:mx-24 md:mx-40 lg:mx-24 gap-10"
+        className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-10 mx-10 sm:mx-24 md:mx-48 lg:mx-24 gap-10"
       >
         {cards}
       </div>

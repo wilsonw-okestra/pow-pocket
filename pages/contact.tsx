@@ -8,7 +8,7 @@ const Contact: FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="h-full md:h-screen w-full flex flex-col md:flex-row justify-center items-center pt-24">
+      <div className="z-10 h-full md:h-screen w-full flex bg-white flex-col md:flex-row justify-center items-center pt-24">
         {/* Left Container */}
         <div className="h-full md:w-1/2 font-sans flex flex-col justify-center items-center px-10 py-10">
           <div>

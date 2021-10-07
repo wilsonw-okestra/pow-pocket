@@ -26,8 +26,8 @@ const Navbar: FC = () => {
       <nav
         className={
           scroll
-            ? "down z-20 fixed flex justify-between items-center w-screen h-20 md:h-22 bg-white bg-opacity-90 md:bg-opacity-90 shadow-lg px-10"
-            : "top  z-20 fixed flex justify-between items-center w-screen h-20 md:h-22 bg-white md:bg-transparent bg-opacity-90 md:bg-opacity-90 px-10"
+            ? "down z-20 fixed font-lato flex justify-between items-center w-screen h-20 md:h-22 bg-white bg-opacity-90 md:bg-opacity-90 shadow-lg px-10"
+            : "top  z-20 fixed font-lato flex justify-between items-center w-screen h-20 md:h-22 bg-white md:bg-transparent bg-opacity-90 md:bg-opacity-90 px-10"
         }
       >
         {/* logo */}
@@ -69,7 +69,7 @@ const Navbar: FC = () => {
       {/* mobile extension */}
       {isOpen && (
         <nav>
-          <div className="z-20 fixed flex md:hidden justify-end items-center w-1/2 right-0 h-screen mt-20 md:mt-24 bg-white bg-opacity-90 md:bg-opacity-100 shadow-2xl border-l-2 border-gray-50">
+          <div className="z-20 fixed font-lato flex md:hidden justify-end items-center w-1/2 right-0 h-screen mt-20 md:mt-24 bg-white bg-opacity-90 md:bg-opacity-100 shadow-2xl border-l-2 border-gray-50">
             <ul className="flex flex-col justify-center items-center w-full h-full ">
               {listItems.map((data) => {
                 return (

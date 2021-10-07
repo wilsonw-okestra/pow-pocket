@@ -12,7 +12,7 @@ const Services: FC = () => {
     { id: 4, title: "Microservices Architecture" },
   ];
   return (
-    <div className="h-full md:h-screen w-full flex flex-col lg:flex-row justify-center my-20 lg:my-0">
+    <div className="h-full md:h-screen w-full font-sand flex flex-col lg:flex-row justify-center my-20 lg:my-0">
       {/* background */}
       <div className="z-0 opacity-20 absolute w-full overflow-hidden">
         <Image src={bg} alt="" height="600" layout="fixed" />
@@ -22,9 +22,9 @@ const Services: FC = () => {
         <Image alt="image" src={Logo} layout="intrinsic" />
       </div>
       {/* Content Section */}
-      <div className="z-10 lg:w-1/2 font-sans flex flex-col justify-center items-center pb-10 mx-12 md:mx-16">
+      <div className="z-10 lg:w-1/2 flex flex-col justify-center items-center pb-10 mx-12 md:mx-16">
         <div>
-          <h2 className="text-4xl sm:text-5xl mb-5">
+          <h2 className="text-4xl sm:text-5xl mb-5 font-lato">
             Perfecting operational workflows
             <span className="font-thin ml-2">with leading technologies</span>
           </h2>

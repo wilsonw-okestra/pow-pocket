@@ -22,7 +22,7 @@ const Principles: FC = () => {
     },
   ];
   return (
-    <div className="h-full lg:h-screen w-screen flex flex-col justify-center items-evenly from-blue-900 bg-blue-600 bg-gradient-to-tr text-white overflow-hidden relative">
+    <div className="h-full lg:h-screen w-screen font-sand flex flex-col justify-center items-evenly from-blue-900 bg-blue-600 bg-gradient-to-tr text-white overflow-hidden relative">
       {/* background */}
       <div className="z-0 opacity-50 absolute -top-96 w-screen flex justify-center overflow-hidden">
         <Image src={bg} alt="" layout="fixed" />

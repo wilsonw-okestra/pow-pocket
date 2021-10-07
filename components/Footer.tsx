@@ -2,14 +2,14 @@ import React, { FC } from "react";
 import Link from "next/link";
 import Logo from "../images/Logo.svg";
 import Image from "next/image";
-import bg from "../images/bg-3.png";
+import bg from "../images/bg-1.jpg";
 
 const Footer: FC = () => {
   return (
-    <div className="h-full text-center md:text-left bg-blue-50 md:px-20 relative">
+    <div className="h-full font-sand text-center md:text-left bg-blue-50 md:px-20 relative">
       {/* background */}
-      <div className="z-0 opacity-5 absolute bottom-10 left-0 w-full overflow-hidden">
-        <Image src={bg} alt="" layout="responsive" />
+      <div className="z-0 opacity-10 w-full overflow-hidden">
+        <Image src={bg} alt="" layout="fill" />
       </div>
       <div className="h-full md:h-52 flex flex-col md:flex-row justify-between items-center">
         {/* First Container */}

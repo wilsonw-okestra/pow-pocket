@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        lato: ["Lato', sans-serif"],
-        sand: ["Quicksand', sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        sand: ["Quicksand", "sans-serif"],
       },
     },
   },
