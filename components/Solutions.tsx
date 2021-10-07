@@ -65,6 +65,12 @@ const Solutions: FC = () => {
           <h2 className="text-2xl pb-2">{data.title}</h2>
           <p className="text-sm">{data.body}</p>
         </div>
+        {/* Button */}
+        <div>
+          <button className="bg-blue-800 from-blue-300 hover:bg-blue-300  hover:from-blue-800 bg-gradient-to-tr duration-300 shadow-xl px-6 py-3 rounded-3xl text-white ">
+            <a href={data.link}>Discover More</a>
+          </button>
+        </div>
       </div>
     );
   });
@@ -92,7 +98,7 @@ const Solutions: FC = () => {
       {/* cards */}
       <div
         id="card-container"
-        className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-10 mx-0 sm:mx-24 gap-10"
+        className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-10 mx-10 sm:mx-24 gap-10"
       >
         {cards}
       </div>

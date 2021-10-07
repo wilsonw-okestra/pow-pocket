@@ -22,7 +22,7 @@ const Services: FC = () => {
         <Image alt="image" src={Logo} layout="intrinsic" />
       </div>
       {/* Content Section */}
-      <div className="z-10 lg:w-1/2 font-sans flex flex-col justify-center items-center pb-10 mx-8 md:mx-16">
+      <div className="z-10 lg:w-1/2 font-sans flex flex-col justify-center items-center pb-10 mx-12 md:mx-16">
         <div>
           <h2 className="text-4xl sm:text-5xl mb-5">
             Perfecting operational workflows
