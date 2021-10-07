@@ -35,10 +35,10 @@ const Clients: FC = () => {
     },
     {
       id: 4,
-      title: "Seek Vaxin",
-      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et animi cupiditate neque, dolor, eaque nobis quibusdam error hic delectus molestiae minus ipsa ad veniam iure, harum velit amet alias in esse quas saepe voluptates commodi? Tempore nesciunt aut repellat porro architecto iste necessitatibus saepe voluptatibus nisi rem officiis esse hic aspernatur nulla ratione maxime beatae delectus in praesentium incidunt ullam natus atque.",
-      image: logo4,
-      link: "https://seek.vaxin.my/",
+      title: "Immunise",
+      body: "Immunise is a national end-to-end vaccine delivery platform, encompassing features such as vaccine booking, appointment scheduling, order management,  physical vaccine delivery & cold chain, refunds, reconciliation and invoicing, and dashboard analytics.",
+      image: logo6,
+      link: "https://immunise.my/",
     },
     {
       id: 5,
@@ -46,13 +46,6 @@ const Clients: FC = () => {
       body: "QR Lab a blockchain digital verification system that allows for immutability and provenance of Covid-19 test results, eliminating the potential for forgery and ensuring complete transparency of test results.",
       image: logo5,
       link: "https://qrlab.my/",
-    },
-    {
-      id: 6,
-      title: "Immunise",
-      body: "Immunise is a national end-to-end vaccine delivery platform, encompassing features such as vaccine booking, appointment scheduling, order management,  physical vaccine delivery & cold chain, refunds, reconciliation and invoicing, and dashboard analytics.",
-      image: logo6,
-      link: "https://immunise.my/",
     },
   ];
 

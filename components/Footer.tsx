@@ -18,17 +18,6 @@ const Footer: FC = () => {
               </a>
             </Link>
           </button>
-          <div className="icons flex justify-center gap-4  text-3xl sm:text-4xl">
-            <a href="#">
-              <FaLinkedin />
-            </a>
-            <a href="#">
-              <AiTwotoneMail />
-            </a>
-            <a href="#">
-              <FaFacebookSquare />
-            </a>
-          </div>
         </div>
         {/* Second Container */}
         <div className="pb-10 md:pb-0">

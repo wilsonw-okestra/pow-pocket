@@ -15,7 +15,6 @@ const Home: NextPage = () => {
       <Solutions />
       <Services />
       <Principles />
-      <Clients />
       <Footer />
     </>
   );

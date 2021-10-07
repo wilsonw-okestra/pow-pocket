@@ -8,9 +8,7 @@ import Logo from "../images/Logo.svg";
 const Navbar: FC = () => {
   const listItems = [
     { id: 1, name: "Home", href: "/" },
-    { id: 2, name: "About", href: "/about" },
-    { id: 3, name: "Products", href: "/products" },
-    { id: 4, name: "Contact", href: "/contact" },
+    { id: 4, name: "Contact Us", href: "/contact" },
   ];
   // Hide Show
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +47,7 @@ const Navbar: FC = () => {
               return (
                 <li key={data.id} className="mr-10">
                   <Link passHref href={data.href}>
-                    <button className="text-black text-sm md:text-base hover:text-gray-500 duration-200 ease-in-out">
+                    <button className="text-black text-sm md:text-base font-medium hover:text-gray-500 duration-200 ease-in-out">
                       <a>{data.name}</a>
                     </button>
                   </Link>
@@ -76,7 +74,7 @@ const Navbar: FC = () => {
               {listItems.map((data) => {
                 return (
                   <li key={data.id} className="">
-                    <button className="text-black text-2xl relative bottom-20 md:text-base hover:text-gray-500 duration-200 ease-in-out py-5">
+                    <button className="text-black text-3xl relative bottom-40 md:text-base hover:text-gray-500 duration-200 ease-in-out py-5">
                       <a href={data.href}>{data.name}</a>
                     </button>
                   </li>
