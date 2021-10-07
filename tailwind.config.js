@@ -3,9 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        "home-img": "url('/images/bg-5.png')",
-      }),
+      fontFamily: {
+        lato: ["Lato', sans-serif"],
+        sand: ["Quicksand', sans-serif"],
+      },
     },
   },
   variants: {

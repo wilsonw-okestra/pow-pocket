@@ -14,7 +14,7 @@ const Homepage: FC = () => {
         <Image src={bg} alt="" height="600" layout="fixed" />
       </div>
       {/* Text Content */}
-      <div className="z-10 h-full lg:w-1/2 font-sans flex flex-col justify-center items-center mx-12 md:mx-16 py-10">
+      <div className="z-10 h-full lg:w-1/2 font-sand flex flex-col justify-center items-center mx-1 md:mx-16 py-10">
         <div>
           <h2 className="text-3xl sm:text-5xl mb-5">
             Perfecting Operational Workflows
