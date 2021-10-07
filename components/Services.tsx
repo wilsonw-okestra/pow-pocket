@@ -5,9 +5,9 @@ import { BsDot } from "react-icons/bs";
 
 const Services: FC = () => {
   const Services = [
-    { id: 1, title: "Machine Learning & Artificial Intelligence" },
+    { id: 1, title: "Data Analytics" },
     { id: 2, title: "Blockchain" },
-    { id: 3, title: "Robotic Process Automation" },
+    { id: 3, title: "Workflow Process Automation" },
     { id: 4, title: "Microservices Architecture" },
   ];
   return (
@@ -24,10 +24,7 @@ const Services: FC = () => {
             <span className="font-thin ml-2">with leading technologies</span>
           </h2>
           <p className="text-left">
-            Lorem ipsum dolor sit met, consectetur adipiscing elit. Aenean
-            sodales dictum viverra. Nam gravida dignissim eros. Vivamus congue
-            erat ante, volutpat dictum neue dignissim eget.
-          </p>
+            We build our solutions with the most reliable tools available. We also keep up-to-date with the latest developments in technology and have incorporated the following technologies in our solutions:</p>
           {/* services list */}
           <ul className="grid grid-cols-2 grid-rows-2 items-center gap-4 pt-5">
             {Services.map((data) => {
