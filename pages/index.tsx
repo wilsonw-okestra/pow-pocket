@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Clients from "../components/Clients";
 import Footer from "../components/Footer";
 import Homepage from "../components/Homepage";
 import Navbar from "../components/Navbar";
