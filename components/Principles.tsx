@@ -7,34 +7,20 @@ const Principles: FC = () => {
   const principles = [
     {
       id: 1,
-      title: "Open Technology Integration",
-      body: "Pellentesque at libero sed tellus fringilla volutpat. Nullam vulputate velit id augue commodo scelerisque.",
+      title: "Open Integration, Ecosystem Focused",
+      body: "We believe that our solutions should be as easily integrated as possible with other third party systems. As we recognise that no system can stand on its own, we build our solutions to fulfil not just mere system and project requirements, but also to be open for integration with other systems in the ecosystem.",
     },
     {
       id: 2,
-      title: "Flexibility",
-      body: "Pellentesque at libero sed tellus fringilla volutpat. Nullam vulputate velit id augue commodo scelerisque.",
+      title: "Agile Driven, Fully Adaptable",
+      body: "We are strong proponents of the Agile Manifesto, and our Agile driven culture permeates throughout our interactions with our clients and partners where we emphasise on collaborative development and adaptability.",
     },
     {
       id: 3,
-      title: "Paperless Administration",
-      body: "Pellentesque at libero sed tellus fringilla volutpat. Nullam vulputate velit id augue commodo scelerisque.",
+      title: "Always Optimizing Operational Workflows",
+      body: "We maintain a razor-sharp focus on maximizing potential and generation of value through optimization of operational processes. A critical component at all levels of system development, optimization of workflows and processes will directly lead to an improvement of overall output. With this in mind, we build our systems not just to improve user experience for the customer but also to reduce operational friction and administrative burden.",
     },
-    {
-      id: 4,
-      title: "Optimized Productivity",
-      body: "Pellentesque at libero sed tellus fringilla volutpat. Nullam vulputate velit id augue commodo scelerisque.",
-    },
-    {
-      id: 5,
-      title: "Maximum Performance",
-      body: "Pellentesque at libero sed tellus fringilla volutpat. Nullam vulputate velit id augue commodo scelerisque.",
-    },
-    {
-      id: 6,
-      title: "Open Data Accessibility",
-      body: "Pellentesque at libero sed tellus fringilla volutpat. Nullam vulputate velit id augue commodo scelerisque.",
-    },
+
   ];
   return (
     <div className="h-full lg:h-screen w-screen flex flex-col justify-center items-evenly from-blue-900 bg-blue-600 bg-gradient-to-tr text-white overflow-hidden relative">
@@ -46,9 +32,7 @@ const Principles: FC = () => {
       <div className="z-10 flex flex-col justify-center items-center text-center mx-5 xl:mx-80 py-10 gap-5">
         <h2 className="text-4xl sm:text-5xl font-bold">Our Core Principles</h2>
         <h3 className="text-lg sm:text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus
-          mi id elit gravida, quis tincidunt purus fringilla. Aenean convallis a
-          neque non pellentesque.
+          We adhere to a set of core principles which sets our culture and guide our every decision and interaction with our customers and partners.
         </h3>
       </div>
       {/* Bottom Section */}
