@@ -1,16 +1,19 @@
 import React, { FC } from "react";
-import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-import { AiTwotoneMail } from "react-icons/ai";
 import Link from "next/link";
 import Logo from "../images/Logo.svg";
 import Image from "next/image";
+import bg from "../images/bg-3.png";
 
 const Footer: FC = () => {
   return (
-    <div className="h-full text-center md:text-left bg-blue-50 md:px-20 ">
+    <div className="h-full text-center md:text-left bg-blue-50 md:px-20 relative">
+      {/* background */}
+      <div className="z-0 opacity-5 absolute bottom-10 left-0 w-full overflow-hidden">
+        <Image src={bg} alt="" layout="responsive" />
+      </div>
       <div className="h-full md:h-52 flex flex-col md:flex-row justify-between items-center">
         {/* First Container */}
-        <div className="flex flex-col justify-center py-10">
+        <div className="z-10 flex flex-col justify-center py-10">
           <button>
             <Link passHref href="/">
               <a>
@@ -20,7 +23,7 @@ const Footer: FC = () => {
           </button>
         </div>
         {/* Second Container */}
-        <div className="pb-10 md:pb-0">
+        <div className="z-10 pb-10 md:pb-0">
           <h1 className="font-semibold">Malaysia Office</h1>
           <h2 className="">35-8, Tower A, UOA Bangsar</h2>
           <h2 className="">UOA Bangsar</h2>
