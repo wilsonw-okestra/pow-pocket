@@ -81,7 +81,7 @@ const Solutions: FC = () => {
       className="h-full xl:h-scree w-full flex flex-col justify-center bg-white border-b-2"
     >
       {/* Text Content */}
-      <div className="font-sans flex flex-col justify-center items-center my-20 md:my-10 mx-24">
+      <div className="font-sans flex flex-col justify-center items-center my-20 md:my-10 mx-12 md:mx-24">
         <div>
           <h2 className="text-4xl sm:text-5xl mb-4">Our Solutions</h2>
           <h3 className="text-base sm:text-lg font-semibold mb-4">

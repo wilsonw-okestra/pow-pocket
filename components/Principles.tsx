@@ -36,8 +36,8 @@ const Principles: FC = () => {
         </h3>
       </div>
       {/* Bottom Section */}
-      <div className="z-10 h-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mx-20 md:mx-16 py-10 lg:py-12">
-        {/* grid item */}
+      <div className="z-10 h-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mx-5 md:mx-16 py-10 lg:py-12">
+        {/* card items */}
         {principles.map((data) => {
           return (
             <div
